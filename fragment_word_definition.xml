@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WordDefinitionFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/GridScroll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="156dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TableLayout
+                android:id="@+id/Grid"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="200dp"
+                android:layout_marginEnd="25dp"
+                android:translationY="-200sp">
+
+                <TableRow
+                    android:id="@+id/HeaderRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/WordColumn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:text="Word" />
+
+                    <TextView
+                        android:id="@+id/NumbeOfDefsColumn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:text="Number of Definitons" />
+
+                    <TextView
+                        android:id="@+id/ImageColumn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="10sp"
+                        android:text="Image" />
+
+                    <TextView
+                        android:id="@+id/StatusColumn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:padding="10sp"
+                        android:text="Status" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+        </ScrollView>
+
+        <TextView
+            android:id="@+id/TitleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:background="#3274EF"
+            android:text="Words"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="320dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:src="@android:drawable/ic_input_add"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="643dp" />
+
+        <ImageButton
+            android:id="@+id/FilterMenuButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="224dp"
+            android:background="#3274EF"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:layout_constraintBottom_toTopOf="@+id/floatingActionButton"
+            app:layout_constraintEnd_toEndOf="@+id/TitleTextView"
+            app:layout_constraintTop_toTopOf="@+id/TitleTextView"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WordSearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="411dp"
+            android:layout_height="50dp"
+            android:background="#3274EF"
+            android:text="Word Search"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="692dp"
+            android:background="#3274EF"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="45dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:src="@android:drawable/ic_menu_search"
+            app:layout_constraintEnd_toStartOf="@+id/SearchInput"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/SearchInput"
+            android:layout_width="283dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            tools:layout_editor_absoluteX="96dp" />
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="43dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#3274EF"
+            android:rotation="90"
+            android:rotationX="0"
+            android:rotationY="0"
+            android:src="@android:drawable/arrow_down_float"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
